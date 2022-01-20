@@ -1,0 +1,64 @@
+.nav{
+    background: $main;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    z-index: 5;
+
+    &-brand{
+        position: absolute;
+        top: .3rem;
+        left: 3rem;
+        color: $secondary;
+    }
+}
+
+.hamburger{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 25px;
+    height: 25px;
+    @include transition-ease;
+}
+
+.hamburger-icon{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 3px;
+    background: $secondary;
+    @include transition-ease;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -10px;
+        background: $secondary;
+        width: 100%;
+        height: 3px;
+        @include transition-ease;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 10px;
+        background: $secondary;
+        width: 100%;
+        height: 3px; 
+        @include transition-ease;       
+    }
+    &.open{
+        transform: rotate(720deg);
+        background: transparent;
+
+        &::before{
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        &::after{
+            transform: rotate(-45deg) translate(6px, -7px);
+        }
+    }
+}

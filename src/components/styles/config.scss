@@ -1,0 +1,36 @@
+$main: #072227;
+$secondary: #35858B;
+$third: #4FBDBA;
+$forth: #AEFEFF;
+
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@mixin test-border{
+    border: 3px solid red;
+}
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+@mixin display-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}

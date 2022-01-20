@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/styles/App.scss';
+import { Router, Route } from "react-router-dom";
+import Nav from "./components/nav/nav"
+import Menu from './components/nav/menu'
+import { useState } from 'react'
+import Main from './components/main/main'
+import Footer from './components/footer/footer'
 
 function App() {
+
+  const [ menu, setMenu] = useState(false)
+
+  function changeShape() {
+    console.log('clicked')
+      if(!menu) {
+          setMenu(true)
+      }else{
+          setMenu(false)
+      }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav state={menu} onClick={changeShape} />
+      <Menu state={menu} />
+      <Main />
+      <Footer />
     </div>
   );
 }
