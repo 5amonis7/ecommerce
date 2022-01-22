@@ -5,6 +5,7 @@ const menu = (props) => {
 
     function menuItem(e){
       props.onClick()
+      props.product(e.target.textContent)
     }
 
   return <div className={props.state ? "menu open": "menu"}>

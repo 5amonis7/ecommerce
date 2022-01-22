@@ -6,8 +6,6 @@ import work from './inventory/work'
 import { useEffect } from 'react/cjs/react.development';
 
 const Products = (props) => {
-
-
     
   return <div className='product'>
             {props.product === 'hiking' ? hiking.map(item => <Product key={item.id} rating={item.rating} title={item.title} img={item.img} price={item.price} />)

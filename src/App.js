@@ -10,28 +10,25 @@ import Products from './components/main/product/products'
 function App() {
 
   const [ menu, setMenu] = useState(false)
-  const [ path, setPath ] = useState('')
+  const [ product, setProduct] = useState()
 
   function PathName(){
     useEffect(() => {
-      setPath(window.location.pathname)
+      let path = window.location.pathname
+      if(path === '/hiking'){
+        setProduct(path.slice(1))
+      }else if(path === '/work'){
+        setProduct(path.slice(1))
+      }else if(path === '/school'){
+        setProduct(path.slice(1))
+      }
     }, [])
   }
   window.onload = PathName()
 
-  const div = document.getElementsByClassName('product')
-
-  function Check(){
-    useEffect(() => {
-      if(div === null){
-        console.log('not here')
-      }else {
-        console.log('here')
-      }
-    }, [])
-  }
-
-  Check()
+function ChangeProduct(obj){
+  setProduct(obj.toLowerCase())
+}
 
   function changeShape() {
       if(!menu) {
@@ -44,10 +41,10 @@ function App() {
   return (
     <div className="App">
       <Nav state={menu} onClick={changeShape} />
-      <Menu onClick={changeShape} state={menu} />
+      <Menu onClick={changeShape} product={ChangeProduct} state={menu} />
       <Routes>
         <Route path='/ecommerce' element={<Main />} />
-        <Route path={window.location.pathname} element={<Products product={window.location.pathname.slice(1)} />} />
+        <Route path={`/${product}`} element={<Products product={product} />} />
       </Routes>
       <Footer />
     </div>
