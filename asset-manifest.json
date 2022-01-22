@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ecommerce/static/css/main.5c57890e.css",
-    "main.js": "/ecommerce/static/js/main.20bea7ac.js",
-    "static/js/426.06da4e58.chunk.js": "/ecommerce/static/js/426.06da4e58.chunk.js",
-    "static/js/256.63c73fde.chunk.js": "/ecommerce/static/js/256.63c73fde.chunk.js",
-    "static/js/990.c8893b42.chunk.js": "/ecommerce/static/js/990.c8893b42.chunk.js",
+    "main.css": "/ecommerce/static/css/main.af178f1b.css",
+    "main.js": "/ecommerce/static/js/main.fed226ed.js",
+    "static/js/426.86258e03.chunk.js": "/ecommerce/static/js/426.86258e03.chunk.js",
+    "static/js/256.0b1791b5.chunk.js": "/ecommerce/static/js/256.0b1791b5.chunk.js",
+    "static/js/990.14ab6032.chunk.js": "/ecommerce/static/js/990.14ab6032.chunk.js",
     "static/js/787.644928fe.chunk.js": "/ecommerce/static/js/787.644928fe.chunk.js",
     "static/js/459.d7fa2bd5.chunk.js": "/ecommerce/static/js/459.d7fa2bd5.chunk.js",
     "static/media/main-BK.jpg": "/ecommerce/static/media/main-BK.1e4dfa19101088f00119.jpg",
@@ -52,16 +52,16 @@
     "static/media/work(1).jpg": "/ecommerce/static/media/work(1).819af5a905add80c9b69.jpg",
     "static/media/person3.jpg": "/ecommerce/static/media/person3.119cb9a21854e033d8e7.jpg",
     "index.html": "/ecommerce/index.html",
-    "main.5c57890e.css.map": "/ecommerce/static/css/main.5c57890e.css.map",
-    "main.20bea7ac.js.map": "/ecommerce/static/js/main.20bea7ac.js.map",
-    "426.06da4e58.chunk.js.map": "/ecommerce/static/js/426.06da4e58.chunk.js.map",
-    "256.63c73fde.chunk.js.map": "/ecommerce/static/js/256.63c73fde.chunk.js.map",
-    "990.c8893b42.chunk.js.map": "/ecommerce/static/js/990.c8893b42.chunk.js.map",
+    "main.af178f1b.css.map": "/ecommerce/static/css/main.af178f1b.css.map",
+    "main.fed226ed.js.map": "/ecommerce/static/js/main.fed226ed.js.map",
+    "426.86258e03.chunk.js.map": "/ecommerce/static/js/426.86258e03.chunk.js.map",
+    "256.0b1791b5.chunk.js.map": "/ecommerce/static/js/256.0b1791b5.chunk.js.map",
+    "990.14ab6032.chunk.js.map": "/ecommerce/static/js/990.14ab6032.chunk.js.map",
     "787.644928fe.chunk.js.map": "/ecommerce/static/js/787.644928fe.chunk.js.map",
     "459.d7fa2bd5.chunk.js.map": "/ecommerce/static/js/459.d7fa2bd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c57890e.css",
-    "static/js/main.20bea7ac.js"
+    "static/css/main.af178f1b.css",
+    "static/js/main.fed226ed.js"
   ]
 }
