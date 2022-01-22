@@ -8,7 +8,7 @@ const Product = (props) => {
 
 
   return <div className='item'>
-            <img src={props.img} alt='product' />
+            <img loading='lazy' src={props.img} alt='product' className='lazy' />
             <div className='stars'>
                 {[...Array(5)].map((star, i) => {
 
