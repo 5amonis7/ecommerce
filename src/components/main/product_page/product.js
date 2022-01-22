@@ -12,8 +12,9 @@ const Product = (props) => {
   return <div className='item'>
 
         
-
+            <div className='img'>
                 <img  loading='lazy' src={props.img} alt='product' />
+            </div>
 
 
             <div className='stars'>

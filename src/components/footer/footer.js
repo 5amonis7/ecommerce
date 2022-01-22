@@ -5,17 +5,22 @@ import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free
 
 const footer = () => {
 
+    const facebook = { url: "https://www.facebook.com/"}
+    const instagram = { url: "https://www.instagram.com/" }
+    const twitter = { url: "https://twitter.com"}
+    const youtube = { url: "https://www.youtube.com"}
+
     const year = new Date().getFullYear()
 
   return <footer className="footer">
-            <NavLink to="/">Frontier</NavLink>
+            <NavLink to="/ecommerce">Frontier</NavLink>
             <div className="group1">
-                <FontAwesomeIcon className="facebook" icon={faFacebook} />
-                <FontAwesomeIcon className="twitter" icon={faTwitter} />
+                <a rel="noreferrer" target="_blank" href={facebook.url}><FontAwesomeIcon className="facebook"  icon={faFacebook} /></a>
+                <a rel="noreferrer" target="_blank" href={twitter.url}><FontAwesomeIcon className="twitter" icon={faTwitter} /></a>
             </div>
             <div className="group2">
-                <FontAwesomeIcon className="instagram" icon={faInstagram} />
-                <FontAwesomeIcon className="youtube" icon={faYoutube} />
+                <a rel="noreferrer" target="_blank" href={instagram.url}><FontAwesomeIcon className="instagram" icon={faInstagram} /></a>
+                <a rel="noreferrer" target="_blank" href={youtube.url}><FontAwesomeIcon className="youtube" icon={faYoutube} /></a>
             </div>
 
             <div className="company">

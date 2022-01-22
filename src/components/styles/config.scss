@@ -5,6 +5,10 @@ $forth: #AEFEFF;
 
 $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 
+$main-font: 'Ubuntu', sans-serif;;
+$secondary-font: 'Proza Libre', sans-serif;
+$third-font: 'Arima Madurai', cursive;
+
 @mixin test-border{
     border: 3px solid red;
 }

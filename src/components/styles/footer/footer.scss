@@ -5,25 +5,33 @@
     height: 21vh;
     display: flex;
     justify-content: center;
+    clear: both;
+    margin-top: 20%;
 
     & a{
         color: $secondary;
         padding-top: 15px;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bold;
         text-decoration: none;
+        font-family: $main-font;
     }
 
     & .group1{
         position: absolute;
-        top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: .3rem;
         left: 1rem;
         width: 23%;
         color: $secondary;
-        font-size: 1.7rem;
+        
 
         & .facebook{
             cursor: pointer;
+            font-size: 2rem;
+            
 
             &:active{
                 color: $forth;
@@ -32,9 +40,8 @@
 
 
         & .twitter{
-            float: right;
-            margin: 4px;
             cursor: pointer;
+            font-size: 2rem;
 
             &:active{
                 color: $forth;
@@ -43,14 +50,18 @@
     }
     & .group2{
         position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 23%;
-        top: 1.5rem;
+        top: .3rem;
         right: 1rem;
         color: $secondary;
         font-size: 1.7rem;
 
         & .instagram{
             cursor: pointer;
+            font-size: 2rem;
 
             &:active{
                 color: $forth;
@@ -58,9 +69,8 @@
         }
 
         & .youtube{
-            float: right;
-            margin: 4px;
             cursor: pointer;
+            font-size: 2rem;
 
             &:active{
                 color: $forth;
@@ -79,6 +89,8 @@
         cursor: pointer;
 
         & p{
+            font-family: $third-font;
+            font-weight: bold;
 
             &:active{
                 color: $forth;
