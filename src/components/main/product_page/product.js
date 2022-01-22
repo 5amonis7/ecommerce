@@ -7,8 +7,15 @@ import { v4 as uuidv4 } from 'uuid';
 const Product = (props) => {
 
 
+
+
   return <div className='item'>
-            <img loading='lazy' src={props.img} alt='product' className='lazy' />
+
+        
+
+                <img  loading='lazy' src={props.img} alt='product' />
+
+
             <div className='stars'>
                 {[...Array(5)].map((star, i) => {
 
