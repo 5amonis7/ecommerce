@@ -5,7 +5,9 @@ import Menu from './components/nav/menu'
 import { useEffect, useState } from 'react'
 import Main from './components/main/main'
 import Footer from './components/footer/footer'
-import Products from './components/main/product/products'
+import Hiking from './components/main/product_page/hiking'
+import School from './components/main/product_page/school'
+import Work from './components/main/product_page/work'
 
 function App() {
 
@@ -44,7 +46,9 @@ function ChangeProduct(obj){
       <Menu onClick={changeShape} product={ChangeProduct} state={menu} />
       <Routes>
         <Route path='/ecommerce' element={<Main />} />
-        <Route path={`/${product}`} element={<Products product={product} />} />
+        <Route path='/school' element={<School />} />
+        <Route path='/hiking' element={<Hiking />} />
+        <Route path='/work' element={<Work />} />
       </Routes>
       <Footer />
     </div>
