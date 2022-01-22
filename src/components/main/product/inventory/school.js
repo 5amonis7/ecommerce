@@ -5,7 +5,7 @@ const school = [
         img: require('../images/school/school(1).jpg'),
         rating: 5,
         title: 'Blue Pack',
-        price: '$9.99'
+        price: '$13.99'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const school = [
         img: require('../images/school/school(2).jpg'),
         rating: 3,
         title: 'Green Pack',
-        price: '$9.99'
+        price: '$15.99'
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const school = [
         img: require('../images/school/school(4).jpg'),
         rating: 5,
         title: 'Light Pack',
-        price: '$9.99'
+        price: '$10.99'
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const school = [
         img: require('../images/school/school(6).jpg'),
         rating: 3,
         title: 'Dark Pack',
-        price: '$9.99'
+        price: '$15.99'
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const school = [
         img: require('../images/school/school(7).jpg'),
         rating: 2,
         title: 'Grey Pack',
-        price: '$9.99'
+        price: '$17.99'
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const school = [
         img: require('../images/school/school(8).jpg'),
         rating: 4,
         title: 'Multi Pack',
-        price: '$9.99'
+        price: '$10.99'
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ const school = [
         img: require('../images/school/school(9).jpg'),
         rating: 5,
         title: 'Skater Pack',
-        price: '$9.99'
+        price: '$13.99'
     },
     {
         id: 10,
@@ -77,7 +77,7 @@ const school = [
         img: require('../images/school/school(10).jpg'),
         rating: 5,
         title: 'Neon Pack',
-        price: '$9.99'
+        price: '$16.99'
     },
     {
         id: 11,
@@ -85,7 +85,7 @@ const school = [
         img: require('../images/school/school(11).jpg'),
         rating: 3,
         title: 'Grey Pack',
-        price: '$9.99'
+        price: '$11.99'
     },
     {
         id: 12,
@@ -93,7 +93,7 @@ const school = [
         img: require('../images/school/school(12).jpg'),
         rating: 4,
         title: 'Simple Pack',
-        price: '$9.99'
+        price: '$12.99'
     },
 ];
 

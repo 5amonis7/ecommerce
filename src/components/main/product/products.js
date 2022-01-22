@@ -1,10 +1,12 @@
 import React from 'react';
 import Product from './product'
-import hiking from './hiking/hiking'
-import school from './school/school'
-import work from './work/work'
+import hiking from './inventory/hiking'
+import school from './inventory/school'
+import work from './inventory/work'
+import { useEffect } from 'react/cjs/react.development';
 
 const Products = (props) => {
+
 
     
   return <div className='product'>

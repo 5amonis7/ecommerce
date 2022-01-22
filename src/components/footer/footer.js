@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
@@ -7,7 +8,7 @@ const footer = () => {
     const year = new Date().getFullYear()
 
   return <footer className="footer">
-            <h1>Frontier</h1>
+            <NavLink to="/">Frontier</NavLink>
             <div className="group1">
                 <FontAwesomeIcon className="facebook" icon={faFacebook} />
                 <FontAwesomeIcon className="twitter" icon={faTwitter} />

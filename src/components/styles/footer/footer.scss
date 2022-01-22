@@ -6,10 +6,12 @@
     display: flex;
     justify-content: center;
 
-    & h1{
+    & a{
         color: $secondary;
         padding-top: 15px;
-        font-size: 2.3rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-decoration: none;
     }
 
     & .group1{
@@ -21,6 +23,7 @@
         font-size: 1.7rem;
 
         & .facebook{
+            cursor: pointer;
 
             &:active{
                 color: $forth;
@@ -31,6 +34,7 @@
         & .twitter{
             float: right;
             margin: 4px;
+            cursor: pointer;
 
             &:active{
                 color: $forth;
@@ -46,6 +50,7 @@
         font-size: 1.7rem;
 
         & .instagram{
+            cursor: pointer;
 
             &:active{
                 color: $forth;
@@ -55,6 +60,7 @@
         & .youtube{
             float: right;
             margin: 4px;
+            cursor: pointer;
 
             &:active{
                 color: $forth;
@@ -70,6 +76,7 @@
         justify-content: space-evenly;
         top: 5rem;
         font-size: 1.3rem;
+        cursor: pointer;
 
         & p{
 

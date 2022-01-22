@@ -4,7 +4,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { v4 as uuidv4 } from 'uuid';
 
 
-const product = (props) => {
+const Product = (props) => {
 
 
   return <div className='item'>
@@ -22,4 +22,4 @@ const product = (props) => {
         </div>;
 };
 
-export default product;
+export default Product;

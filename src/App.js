@@ -10,32 +10,28 @@ import Products from './components/main/product/products'
 function App() {
 
   const [ menu, setMenu] = useState(false)
-  const [ product, setProduct ] = useState('')
-  const [ path, setPath ] = useState()
-  
-
-  function productChoice(obj){
-    setProduct(obj.toLowerCase())
-    setPath(`/${obj.toLowerCase()}`)
-  }
-
+  const [ path, setPath ] = useState('')
 
   function PathName(){
-    
     useEffect(() => {
-      let path = window.location.pathname;
-      if (path === '/school'){
-        setPath(path)
-      }else if(path === '/work'){
-        setPath(path)
-      }else if(path === '/hiking'){
-        setPath(path)
+      setPath(window.location.pathname)
+    }, [])
+  }
+  window.onload = PathName()
+
+  const div = document.getElementsByClassName('product')
+
+  function Check(){
+    useEffect(() => {
+      if(div === null){
+        console.log('not here')
+      }else {
+        console.log('here')
       }
     }, [])
   }
-  PathName()
 
-
+  Check()
 
   function changeShape() {
       if(!menu) {
@@ -48,10 +44,10 @@ function App() {
   return (
     <div className="App">
       <Nav state={menu} onClick={changeShape} />
-      <Menu onClick={changeShape} product={productChoice} state={menu} />
+      <Menu onClick={changeShape} state={menu} />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path={path} element={<Products product={product} />} />
+        <Route path={window.location.pathname} element={<Products product={window.location.pathname.slice(1)} />} />
       </Routes>
       <Footer />
     </div>

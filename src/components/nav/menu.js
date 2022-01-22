@@ -4,9 +4,6 @@ import { NavLink } from 'react-router-dom'
 const menu = (props) => {
 
     function menuItem(e){
-      
-      let obj = e.target.textContent
-      props.product(obj)
       props.onClick()
     }
 
