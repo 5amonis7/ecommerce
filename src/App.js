@@ -46,7 +46,7 @@ function App() {
       <Nav state={menu} onClick={changeShape} />
       <Menu onClick={changeShape} state={menu} />
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/ecommerce' element={<Main />} />
         <Route path={window.location.pathname} element={<Products product={window.location.pathname.slice(1)} />} />
       </Routes>
       <Footer />
