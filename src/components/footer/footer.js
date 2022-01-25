@@ -12,8 +12,12 @@ const footer = () => {
 
     const year = new Date().getFullYear()
 
+    function scroll(){
+        window.scrollTo(0, 0)
+    }
+
   return <footer className="footer">
-            <NavLink className="link" to="/ecommerce">Frontier</NavLink>
+            <NavLink onClick={scroll} className="link" to="/ecommerce">Frontier</NavLink>
             <div className="group1">
                 <a className="link" rel="noreferrer" target="_blank" href={facebook.url}><FontAwesomeIcon className="facebook"  icon={faFacebook} /></a>
                 <a className='link' rel="noreferrer" target="_blank" href={twitter.url}><FontAwesomeIcon className="twitter" icon={faTwitter} /></a>

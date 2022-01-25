@@ -1,5 +1,6 @@
 import './components/styles/App.scss';
 import { Routes, Route } from "react-router-dom";
+import Loader from "./components/loader"
 import Nav from "./components/nav/nav"
 import Menu from './components/nav/menu'
 import React, { useState, lazy, Suspense } from 'react'
@@ -31,7 +32,7 @@ function App() {
     <div className="App">
       <Nav state={menu} onClick={changeShape} />
       <Menu onClick={changeShape} state={menu} />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path='/ecommerce' element={<Main />} />
           <Route path='/school' element={<School />} />
