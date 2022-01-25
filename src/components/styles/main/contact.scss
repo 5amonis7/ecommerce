@@ -1,0 +1,113 @@
+.contact{
+
+    &-title{
+        @include display-flex;
+        background: $secondary;
+        color: $forth;
+        height: 10rem;
+        font-size: 1.5rem;
+        font-family: $secondary-font;
+    }
+
+    &-section{
+        width: 100%;
+        height: 30em;
+        @include display-flex;
+        
+        &_form{
+            font-family: $third-font;
+            font-weight: map-get($font-weights , bold );
+
+            & input{
+                height: 1.7rem;
+                border: none;
+                box-shadow: inset 0px 0px 5px black;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            & label {
+                display: block;
+            }
+            
+            & #first{
+                float: left;
+            }
+            & #last{
+                padding-left: 10px;
+                float: right;
+            }
+            & #email{
+                display: block;
+                width: 100%;
+
+                & input{
+                    width: 100%;
+                }
+            }
+            & #message{
+                clear: both;
+                height: 15rem;
+                
+                & textarea{
+                    width: 100%;
+                    height: 80%;
+                    resize: none;
+                    border: none;
+                    box-shadow: inset 0px 0px 5px black;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    
+                }
+            }
+
+            & .submit{
+                height: 2rem;
+                width: 30%;
+                font-weight: map-get($font-weights , bold );
+                box-shadow: inset 0px 0px 5px black;
+                border-radius: 5px;
+                border: none;
+                background: $secondary;
+                color: $forth;
+                font-family: $secondary-font;
+                @include transition-ease;
+                cursor: pointer;
+
+                &:active{
+                    background: $third;
+                }
+            }
+            & .button{
+                @include display-flex;
+                height: 5rem;
+
+                & button{
+                    @include transition-ease;
+                }
+
+                & #check{
+                    animation: grow .5s linear forwards;
+                    @include transition-ease;
+                }
+            }
+
+            & .done{
+                transform: rotate(720deg);
+                border-radius: 50%;
+                width: 5rem;
+                height: 5rem;
+            }
+            
+        }
+    }
+}
+
+@keyframes grow{
+    from{
+        font-size: 1rem;
+    }
+    to{
+        font-size: 3rem;
+    }
+}

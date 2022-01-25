@@ -5,9 +5,13 @@ import Menu from './components/nav/menu'
 import React, { useState, lazy, Suspense } from 'react'
 import Main from './components/main/main'
 import Footer from './components/footer/footer'
+import About from './components/main/about'
+import Contact from './components/main/contact'
+import Shipping from './components/main/shipping'
 const Work = lazy(() => import("./components/main/product_page/work"));
 const Hiking = lazy(() => import("./components/main/product_page/hiking"));
 const School = lazy(() => import("./components/main/product_page/school"));
+
 
 function App() {
 
@@ -33,6 +37,9 @@ function App() {
           <Route path='/school' element={<School />} />
           <Route path='/hiking' element={<Hiking />} />
           <Route path='/work' element={<Work />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/shipping' element={<Shipping />} />
         </Routes>
       </Suspense>
       <Footer />

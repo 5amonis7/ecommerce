@@ -13,20 +13,20 @@ const footer = () => {
     const year = new Date().getFullYear()
 
   return <footer className="footer">
-            <NavLink to="/ecommerce">Frontier</NavLink>
+            <NavLink className="link" to="/ecommerce">Frontier</NavLink>
             <div className="group1">
-                <a rel="noreferrer" target="_blank" href={facebook.url}><FontAwesomeIcon className="facebook"  icon={faFacebook} /></a>
-                <a rel="noreferrer" target="_blank" href={twitter.url}><FontAwesomeIcon className="twitter" icon={faTwitter} /></a>
+                <a className="link" rel="noreferrer" target="_blank" href={facebook.url}><FontAwesomeIcon className="facebook"  icon={faFacebook} /></a>
+                <a className='link' rel="noreferrer" target="_blank" href={twitter.url}><FontAwesomeIcon className="twitter" icon={faTwitter} /></a>
             </div>
             <div className="group2">
-                <a rel="noreferrer" target="_blank" href={instagram.url}><FontAwesomeIcon className="instagram" icon={faInstagram} /></a>
-                <a rel="noreferrer" target="_blank" href={youtube.url}><FontAwesomeIcon className="youtube" icon={faYoutube} /></a>
+                <a className='link' rel="noreferrer" target="_blank" href={instagram.url}><FontAwesomeIcon className="instagram" icon={faInstagram} /></a>
+                <a className='link' rel="noreferrer" target="_blank" href={youtube.url}><FontAwesomeIcon className="youtube" icon={faYoutube} /></a>
             </div>
 
             <div className="company">
-               <p>About us</p> 
-               <p>Contact us</p> 
-               <p>History</p> 
+               <a href="/about">About us</a> 
+               <a href="/contact">Contact us</a> 
+               <a href='/shipping'>Shipping</a> 
             </div>
 
             <p className='end'>Copyright&copy; {year}</p>

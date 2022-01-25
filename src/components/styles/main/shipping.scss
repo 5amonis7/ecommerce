@@ -1,0 +1,20 @@
+.shipping{
+
+    &-title{
+        @include display-flex;
+        background: $secondary;
+        color: $forth;
+        height: 25vh;
+        font-size: 1.5rem;
+        font-family: $secondary-font;
+    }
+
+    &-section{
+        text-align: center;
+        font-size: 1.5rem;
+        
+        @include display-flex;
+        font-family: $third-font;
+        font-weight: map-get($font-weights, medium )
+    }
+}
