@@ -1,13 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import school from './inventory/school'
 import Product from './product'
+import Item from './item'
 
-const products = () => {
+const Products = ({ productOpen, changePage, getCart }) => {
+
+  const [ product, setProduct ] = useState({
+    title: '',
+    img: '',
+    description: '',
+    rating: '',
+    price: '',
+    tag: ''
+}) 
+
+function showItem(item){
+  setProduct({
+    title: item.title,
+    description: item.description,
+    img: item.img,
+    rating: item.rating,
+    price: item.price,
+    tag: item.tag,
+  })
+}
+
 
 
   return <div className='product'>
-            {school.map(item => <Product key={item.id} rating={item.rating} title={item.title} img={item.img} price={item.price} />)} 
+            {!productOpen ? school.map(item => <Product changePage={changePage} showItem={showItem} key={item.id} item={item} />)
+            : <Item getCart={getCart} product={product} changePage={changePage} />  
+          } 
         </div>;
 };
 
-export default products;
+export default Products;

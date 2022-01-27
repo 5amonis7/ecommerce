@@ -5,7 +5,9 @@ const hiking = [
         img: require('../images/hiking/hiking(1).jpg'),
         rating: 3,
         title: 'Green Pack',
-        price: '$10.99'
+        inCart: 0,
+        tag: 'hiking1',
+        price: 10.99
     },
     {
         id: 2,
@@ -13,7 +15,9 @@ const hiking = [
         img: require('../images/hiking/hiking(2).jpg'),
         rating: 5,
         title: 'Grey Pack',
-        price: '$11.99'
+        inCart: 0,
+        tag: 'hiking2',
+        price: 11.99
     },
     {
         id: 3,
@@ -21,7 +25,9 @@ const hiking = [
         img: require('../images/hiking/hiking(3).jpg'),
         rating: 3,
         title: 'Yellow Pack',
-        price: '$19.99'
+        inCart: 0,
+        tag: 'hiking3',
+        price: 19.99
     },
     {
         id: 4,
@@ -29,7 +35,9 @@ const hiking = [
         img: require('../images/hiking/hiking(4).jpg'),
         rating: 3,
         title: 'Blue Pack',
-        price: '$17.99'
+        inCart: 0,
+        tag: 'hiking4',
+        price: 17.99
     },
     {
         id: 5,
@@ -37,7 +45,9 @@ const hiking = [
         img: require('../images/hiking/hiking(5).jpg'),
         rating: 4,
         title: 'Green Pack',
-        price: '$9.99'
+        inCart: 0,
+        tag: 'hiking5',
+        price: 9.99
     },
     {
         id: 6,
@@ -45,7 +55,9 @@ const hiking = [
         img: require('../images/hiking/hiking(6).jpg'),
         rating: 5,
         title: 'Grey Pack',
-        price: '$15.99'
+        inCart: 0,
+        tag: 'hiking6',
+        price: 15.99
     },
     {
         id: 7,
@@ -53,7 +65,9 @@ const hiking = [
         img: require('../images/hiking/hiking(7).jpg'),
         rating: 3,
         title: 'Duo Pack',
-        price: '$13.99'
+        inCart: 0,
+        tag: 'hiking7',
+        price: 13.99
     },
     {
         id: 8,
@@ -61,7 +75,9 @@ const hiking = [
         img: require('../images/hiking/hiking(8).jpg'),
         rating: 2,
         title: 'Black Pack',
-        price: '$9.99'
+        inCart: 0,
+        tag: 'hiking8',
+        price: 9.99
     },
     {
         id: 9,
@@ -69,7 +85,9 @@ const hiking = [
         img: require('../images/hiking/hiking(9).jpg'),
         rating: 4,
         title: 'Navy Pack',
-        price: '$17.99'
+        inCart: 0,
+        tag: 'hiking9',
+        price: 17.99
     },
     {
         id: 10,
@@ -77,7 +95,9 @@ const hiking = [
         img: require('../images/hiking/hiking(10).jpg'),
         rating: 3,
         title: 'Brown Pack',
-        price: '$11.99'
+        inCart: 0,
+        tag: 'hiking10',
+        price: 11.99
     },
     {
         id: 11,
@@ -85,7 +105,9 @@ const hiking = [
         img: require('../images/hiking/hiking(11).jpg'),
         rating: 5,
         title: 'Light Pack',
-        price: '$19.99'
+        inCart: 0,
+        tag: 'hiking11',
+        price: 19.99
     },
     {
         id: 12,
@@ -93,7 +115,9 @@ const hiking = [
         img: require('../images/hiking/hiking(12).jpg'),
         rating: 2,
         title: 'Duty Pack',
-        price: '$10.99'
+        inCart: 0,
+        tag: 'hiking12',
+        price: 10.99
     },
 ];
 

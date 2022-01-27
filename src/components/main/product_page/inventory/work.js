@@ -5,7 +5,9 @@ const work = [
         img: require('../images/work/work(1).jpg'),
         rating: 4,
         title: 'Leather Pack',
-        price: '$16.99'
+        inCart: 0,
+        tag: 'work1',
+        price: 16.99
     },
     {
         id: 2,
@@ -13,7 +15,9 @@ const work = [
         img: require('../images/work/work(2).jpg'),
         rating: 2,
         title: 'Green Pack',
-        price: '$10.99'
+        inCart: 0,
+        tag: 'work2',
+        price: 10.99
     },
     {
         id: 3,
@@ -21,7 +25,9 @@ const work = [
         img: require('../images/work/work(3).jpg'),
         rating: 5,
         title: 'Black Pack',
-        price: '$13.99'
+        inCart: 0,
+        tag: 'work3',
+        price: 13.99
     },
     {
         id: 4,
@@ -29,7 +35,9 @@ const work = [
         img: require('../images/work/work(4).jpg'),
         rating: 4,
         title: 'Brown Pack',
-        price: '$9.99'
+        inCart: 0,
+        tag: 'work4',
+        price: 9.99
     },
     {
         id: 5,
@@ -37,7 +45,9 @@ const work = [
         img: require('../images/work/work(5).jpg'),
         rating: 3,
         title: 'Blue Pack',
-        price: '$14.99'
+        inCart: 0,
+        tag: 'work5',
+        price: 14.99
     },
     {
         id: 6,
@@ -45,7 +55,9 @@ const work = [
         img: require('../images/work/work(6).jpg'),
         rating: 3,
         title: 'Leather Pack',
-        price: '$11.99'
+        inCart: 0,
+        tag: 'work6',
+        price: 11.99
     },
     {
         id: 7,
@@ -53,7 +65,9 @@ const work = [
         img: require('../images/work/work(7).jpg'),
         rating: 5,
         title: 'Leather Pack',
-        price: '$17.99'
+        inCart: 0,
+        tag: 'work7',
+        price: 17.99
     },
     {
         id: 8,
@@ -61,7 +75,9 @@ const work = [
         img: require('../images/work/work(8).jpg'),
         rating: 3,
         title: 'Grey Pack',
-        price: '$9.99'
+        inCart: 0,
+        tag: 'work8',
+        price: 9.99
     },
     {
         id: 9,
@@ -69,7 +85,9 @@ const work = [
         img: require('../images/work/work(9).jpg'),
         rating: 3,
         title: 'Smooth Pack',
-        price: '$10.99'
+        inCart: 0,
+        tag: 'work9',
+        price: 10.99
     },
     {
         id: 10,
@@ -77,7 +95,9 @@ const work = [
         img: require('../images/work/work(10).jpg'),
         rating: 5,
         title: 'Navy Pack',
-        price: '$12.99'
+        inCart: 0,
+        tag: 'work10',
+        price: 12.99
     },
     {
         id: 11,
@@ -85,7 +105,9 @@ const work = [
         img: require('../images/work/work(11).jpg'),
         rating: 4,
         title: 'Leather Pack',
-        price: '$16.99'
+        inCart: 0,
+        tag: 'work11',
+        price: 16.99
     },
     {
         id: 12,
@@ -93,7 +115,9 @@ const work = [
         img: require('../images/work/work(12).jpg'),
         rating: 3,
         title: 'Black Pack',
-        price: '$11.99'
+        inCart: 0,
+        tag: 'work12',
+        price: 11.99
     },
 ];
 

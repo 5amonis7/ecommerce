@@ -5,6 +5,7 @@ const menu = (props) => {
 
     function menuItem(e){
       props.onClick()
+      props.closePage()
     }
 
   return <div className={props.state ? "menu open": "menu"}>

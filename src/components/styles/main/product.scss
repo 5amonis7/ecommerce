@@ -11,7 +11,7 @@
         width: calc(100vw - 728px);
         min-width: 150px;
         max-width: 250px;
-        height: calc(100vw - 728px);
+        height: calc(100vw - 650px);
         max-height: 350px;
         min-height: 210px;
         position: relative;
@@ -24,11 +24,11 @@
             position: absolute;
             bottom: 3rem;
             font-size: calc(1rem + 4 * ((100vw - 320px) / 680));
+            filter: drop-shadow(0px 0px 3px black)
         }
 
         & .img{
             height: 80%;
-            position: relative;
             flex-direction: column;
             align-items: center;
             display: flex;
@@ -36,10 +36,9 @@
 
 
         & img{
-            padding-top: 5px;
             max-width: 240px;
-            width: auto;
-            height: 80%;
+            width: 80%;
+            height: auto;
             border-radius: 10px;
             cursor: pointer;
             @include transition-ease;
@@ -56,6 +55,8 @@
             font-weight: bold;
             font-size: calc(.8rem + 4 * ((100vw - 320px) / 680));
             font-family: $secondary-font;
+            color: black;
+            text-decoration: none;
         }
         & .price{
             position: absolute;
@@ -63,6 +64,8 @@
             bottom: .3rem;
             font-family: $third-font;
             font-weight: bold;
+            color: black;
+            text-decoration: none;
         }
     }
 }
