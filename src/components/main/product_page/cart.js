@@ -100,7 +100,7 @@ const Cart = ({ getCart }) => {
                     <p>Total: ${
                             percent === 0 ? 0.00 + extra:
                             percent === .5 ? ((total * .5) + extra).toFixed(2):
-                            parseFloat(total + parseFloat(extra)).toFixed(2)
+                            (parseFloat(total) + parseFloat(extra)).toFixed(2)
                         }</p>
                 </div>
 

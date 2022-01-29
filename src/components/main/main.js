@@ -5,13 +5,14 @@ import Bottom from './bottom'
 import Testimonials from './testimonials'
 
 const main = () => {
-  return <div>
+  return <div className="main">
             {/* main image */}
             <Header />
             {/* body */}
             <Top />
             <Bottom />
             <Testimonials />
+            <hr className="main-line" />
         </div>;
 };
 

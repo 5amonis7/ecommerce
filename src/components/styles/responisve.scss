@@ -336,6 +336,12 @@
 
 
 @include media-xl{
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .header{
         
         & h1{
@@ -351,6 +357,8 @@
     }
 
     .top{
+        height: 80vh;
+        width: 90%;
 
         & .circles{
             margin-top: 30px;
@@ -358,6 +366,9 @@
     }
 
     .bottom{
+
+        width: 90%;
+        border-radius: 10px;
        
         img{
             height: 70%;
@@ -366,12 +377,14 @@
 
     .test{
         height: 39rem;
+        margin-bottom: 20px;
 
         &-review{
             height: 30rem;
             width: 60%;
         }
     }
+
 
     .footer{
 

@@ -28,9 +28,9 @@ const footer = () => {
             </div>
 
             <div className="company">
-               <a href="/about">About us</a> 
-               <a href="/contact">Contact us</a> 
-               <a href='/shipping'>Shipping</a> 
+               <NavLink to="/about">About us</NavLink> 
+               <NavLink to="/contact">Contact us</NavLink> 
+               <NavLink to='/shipping'>Shipping</NavLink> 
             </div>
 
             <p className='end'>Copyright&copy; {year}</p>
