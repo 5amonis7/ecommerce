@@ -70,6 +70,7 @@
             transform: rotate(-45deg) translate(6px, -7px);
         }
     }
+
 }
 
 .cart-btn{
@@ -80,7 +81,6 @@
     cursor: pointer;
     color: $secondary;
     font-size: 1.5rem;
-    width: 65px;
 
     &:hover{
         color: $forth;
@@ -88,6 +88,7 @@
 
     & span{
         padding-left: 10px;
-        float: right;
+        float: left;
     }
 }
+

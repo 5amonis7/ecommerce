@@ -11,7 +11,7 @@ const Nav = (props) => {
   return <div className='nav'>
             <NavLink to='/ecommerce' className='nav-brand'>Frontier</NavLink>
             <Hamburger state={props.state} onClick={props.onClick} />
-            <NavLink to='/cart' className='cart-btn'><FontAwesomeIcon icon={faCartPlus} /><span>{props.cartAmount}</span></NavLink>
+            <NavLink to='/cart' className='cart-btn'><span>{props.cartAmount == 0 ? '': props.cartAmount}</span><FontAwesomeIcon icon={faCartPlus} /></NavLink>
         </div>;
 };
 

@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const item = ({ product, changePage, getCart }) => {
 
+  // update cart number
   function cartNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -21,6 +22,7 @@ const item = ({ product, changePage, getCart }) => {
     setItems(product)
   }
 
+  //update whats in the cart
   function setItems(product){
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
@@ -45,6 +47,8 @@ const item = ({ product, changePage, getCart }) => {
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
   }
 
+
+  // the total cost of everything
   function totalCost(){
 
     let cartCost = localStorage.getItem('totalCost');

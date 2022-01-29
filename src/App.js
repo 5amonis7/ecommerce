@@ -19,6 +19,15 @@ function App() {
 
   const [ cartAmount, setCartAmount ] = useState()
 
+
+  useEffect(() => {
+    let total = JSON.parse(localStorage.getItem('cartNumbers'))
+    if(total == 0) localStorage.setItem('totalCost', '0')
+    }, [])
+
+    
+  
+
   window.onload = RefreshCart()
   function RefreshCart() {
     useEffect(() => {
@@ -71,7 +80,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/shipping' element={<Shipping />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/cart' element={<Cart getCart={getCart} />} />
         </Routes>
       </Suspense>
       <Footer />
