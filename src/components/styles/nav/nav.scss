@@ -6,8 +6,9 @@
     width: 100%;
     min-height: 5rem;
     z-index: 5;
+    overflow: hidden;
 
-    &-brand{
+    & #nav-brand{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

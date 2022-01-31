@@ -152,6 +152,18 @@
 
 
 @include media-lg{
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav-bar{
+        
+        &_link{
+            visibility: visible;
+        }
+    }
     .top{
         display: flex;
         flex-direction: row-reverse;
