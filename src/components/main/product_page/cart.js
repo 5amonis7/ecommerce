@@ -10,6 +10,10 @@ const Cart = ({ getCart }) => {
     const [ extra, setExtra ] = useState(0)
     const [ percent, setPercent ] = useState(2)
 
+    function refreshCart(item){
+        setShowingProducts(item)
+    }
+
 
     function addShipping(e){
         let value = e.target.value
@@ -34,7 +38,7 @@ const Cart = ({ getCart }) => {
     useEffect(() => {
         let cost = JSON.parse(localStorage.getItem('totalCost'))
         let products = JSON.parse(localStorage.getItem('productsInCart'))
-        if(products) setShowingProducts(products)
+        if(products) setShowingProducts(Object.values(products))
         if(cost){
             setTotal(cost)
         }else{
@@ -43,7 +47,8 @@ const Cart = ({ getCart }) => {
     }, [])
 
     function RefreshTotal() {
-          setTotal(localStorage.getItem('totalCost'))
+        let cost = JSON.parse(localStorage.getItem('totalCost'))
+        setTotal(cost)
       }
 
     function discount(e){
@@ -58,6 +63,7 @@ const Cart = ({ getCart }) => {
     }
 
 
+
   return <div className="cart">
             <h1 className="cart-title">Cart</h1>
 
@@ -70,7 +76,7 @@ const Cart = ({ getCart }) => {
                 </div>
 
                 <div className="cart-products">
-                    {Object.values(showingProducts).map((item, index) => <CartItem  RefreshTotal={RefreshTotal} getCart={getCart} key={index} item={item} />)
+                    {Object.values(showingProducts).map((item, index) => <CartItem refresh={refreshCart}  RefreshTotal={RefreshTotal} getCart={getCart} key={index} item={item} />)
                 }
                 </div>
             </div>

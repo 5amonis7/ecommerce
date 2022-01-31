@@ -66,7 +66,6 @@ function App() {
  
 
 
-
   return (
     <div onClick={closeMenu} className="App">
       <Nav cartAmount={cartAmount} state={menu} onClick={changeShape} />

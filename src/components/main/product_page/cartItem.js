@@ -2,9 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 
-const CartItems = ({ item, getCart, RefreshTotal }) => {
-
-
+const CartItems = ({ item, getCart, RefreshTotal, refresh }) => {
 
 
 // increase amount
@@ -65,8 +63,8 @@ const CartItems = ({ item, getCart, RefreshTotal }) => {
 
         }else if(cartItems[item.tag].inCart == 1){
           delete cartItems[item.tag]
-          localStorage.setItem('productsInCart', cartItems)
-          window.location.reload()
+          localStorage.setItem('productsInCart', JSON.stringify(cartItems))
+          refresh(cartItems)
       }  
 
     localStorage.setItem("productsInCart", JSON.stringify(cartItems)); 
