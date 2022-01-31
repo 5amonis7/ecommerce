@@ -3,7 +3,7 @@
 
     &-test{
         width: 100%;
-        min-height: 50vh;
+        min-height: 30rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -15,7 +15,7 @@
         @include display-flex;
         background: $secondary;
         color: $forth;
-        height: 7rem;
+        height: 10rem;
         font-size: 3rem;
         font-family: $secondary-font;
     }

@@ -11,6 +11,7 @@
 
     .top{
         @include display-flex;
+        height: 45rem;
 
         & h1{
             position: absolute;
@@ -184,6 +185,9 @@
 
     .bottom{
         display: flex;
+        width: 90%;
+        
+        border-radius: 10px;
         flex-direction: row-reverse;
 
         & img{
@@ -199,7 +203,8 @@
     }
 
     .test{
-        height: 60vh;
+        height: 35rem;
+        width: 90%;
 
         & h1{
             font-size: 3rem;
@@ -336,11 +341,7 @@
 
 
 @include media-xl{
-    .main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
 
     .header{
         
@@ -367,8 +368,6 @@
 
     .bottom{
 
-        width: 90%;
-        border-radius: 10px;
        
         img{
             height: 70%;

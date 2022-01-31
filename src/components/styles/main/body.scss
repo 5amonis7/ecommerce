@@ -1,7 +1,7 @@
 .top{
     position: relative;
     width: 100%;
-    height: 70vh;
+    min-height: 38rem;
     background: $forth;
 
     & h1{
@@ -78,7 +78,7 @@
 .bottom{
     position: relative;
     width: 100%;
-    height: 75vh;
+    min-height: 40rem;
     background: $third;
 
     & img{
@@ -101,7 +101,7 @@
 .test{
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 50rem;
     background: $forth;
  
 
@@ -132,7 +132,7 @@
             top: 1rem;
             background: $main;
             width: 45%;
-            height: 45%;
+            min-height: 18rem;
             border-radius: 10px;
 
             & img{
@@ -147,7 +147,7 @@
             top: 1rem;
             background: $main;
             width: 45%;
-            height: 45%;
+            min-height: 18rem;
             border-radius: 10px;
 
             & img{
@@ -160,7 +160,7 @@
             bottom: 0;
             background: $main;
             width: 45%;
-            height: 45%;
+            min-height: 18rem;
             border-radius: 10px;
 
             & img{
